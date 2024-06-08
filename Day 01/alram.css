@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  /* box-sizing: border-box; */
+}
+
+/* root */
+
+:root {
+  --main-color: purple;
+  --font-color: black;
+  --font--color-white: white;
+  --font--color-light: rgba(255, 255, 255, 0.2);
+  --font-f-max: 24px;
+  --font-f-more-max: 40px;
+  --font-f-min: 16px;
+  --font-f-family: Georgia, "Times New Roman", Times, serif;
+  --section-padding: 40px 50px;
+  --main-border: 12px;
+}
+/*  */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: var(--main-color);
+}
+.continer {
+  width: 30%;
+  height: auto;
+  background: var(--font--color-white);
+  /* color: black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: var(--section-padding);
+  border-radius: var(--main-border);
+}
+
+.continer .clock-logo {
+  width: 100px;
+  }
+  .clockAnimation {
+    animation: animate 1s linear infinite ;
+  }
+  @keyframes animate {
+    0%,100%{
+/* transform: rotate(-20deg); */
+scale: 0.6;
+    }
+
+    50%{
+/* transform: rotate(20deg); */
+scale: 1;
+    }
+  }
+  .clock-logo img {
+  width: 100%;
+}
+#displayTime {
+  font-size: var(--font-f-more-max);
+  /* font-family: var(--font-f-family); */
+  font-weight: 500;
+  margin: 10px 5px;
+  word-spacing: 3px;
+}
+option {
+  padding: 10px 20px;
+}
+
+/* the user selection section will come here */
+#userSelection {
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+select#setHours,
+select#setminutes,
+select#setseconds {
+  padding: 5px 10px;
+  background: var(--font--color-light);
+  transition: 0.4s;
+  margin: 10px 5px;
+}
+.user-focus:focus {
+  outline: 1px solid var(--main-color);
+}
+
+.alarmSet {
+  font-size: var(--font-f-min);
+  background: var(--main-color);
+  padding: 12px;
+  border-radius: var(--main-border);
+  display: block;
+  margin: 12px auto;
+  width: 100%;
+  color: var(--font--color-white);
+  font-size: var(--font-f-min);
+  border: none;
+  outline: 0;
+  cursor: pointer;
+}
