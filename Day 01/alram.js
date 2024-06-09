@@ -27,7 +27,7 @@ setInterval(() => {
   let allUserValues = setHours + ":" + setminutes + ":" + setseconds;
   // console.log(allUserValues);
 
-  if (allTime === allUserValues) {
+  if (allTime == allUserValues) {
     alramBtn.innerText = "Clear Alarm";
     audio.play();
     alramBtn.style.display = "block";
