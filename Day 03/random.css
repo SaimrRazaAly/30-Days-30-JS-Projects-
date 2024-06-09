@@ -30,10 +30,12 @@ body {
 
 .btn {
   background-color: #718096;
-  color: #6aedff;
+  /* color: #6aedff; */
   border-radius: 9999px;
   height: 3rem;
   width: 3rem;
   outline: 0;
   border: 0;
+  font-size: 17px;
+  cursor: pointer;
 }
