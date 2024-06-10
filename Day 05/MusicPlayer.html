@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MusicPlayer</title>
+    <link rel="stylesheet" href="assertts/MusicPlayer.css" />
+    <link rel="shortcut icon" href="assertts/ar.jpg" type="image/x-icon">
+  </head>
+  <body>
+    <div class="container">
+      <div class="music-player">
+    
+    <!-- navbar will be here -->
+  <nav>
+    <div class="circle">
+        <i class="fa-solid fa-angle-left"></i>
+      </div>
+    <div class="circle">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </nav>
+
+<!-- niow the image and the txet  -->
+ <div class="music-img">
+  <img src="assertts/ar.jpg" alt="Loading">
+ </div>
+<div class="text">
+  <h1>Atif Alsam</h1>
+  <p>Lorem ipsum dolor sit amet consectetur.</p>
+</div>
+<!--  -->
+<audio controls id="song">
+  <source src="assertts/Cool Revenge - Jeremy Blake.mp3">
+</audio>
+ <input type="range" value="0" id="prograss">
+
+
+<div class="controls" >
+  <div><i class="fa-solid fa-backward"></i></div>
+  <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+  <div><i class="fa-solid fa-forward"></i></div>
+</div>
+
+<!--  -->
+</div>
+</div>
+
+    <!-- all the scripts and the icons -->
+     <script src="assertts/MusicPalyer.js"></script>
+    <script
+      src="https://kit.fontawesome.com/62e0bff752.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
