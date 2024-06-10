@@ -16,6 +16,7 @@ if (ctrlIcon.classList.contains("fa-pause")) {
     song.play();
     ctrlIcon.classList.add("fa-pause");
     ctrlIcon.classList.remove("fa-play");
+    
   prograss.onchange = () => {
   song.currentTime = song.value;
   ctrlIcon.classList.add("fa-pause");
